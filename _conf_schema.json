@@ -1,0 +1,62 @@
+{
+  "api_url": {
+    "description": "你的服务器 API 节点地址",
+    "type": "string",
+    "hint": "登录麦块联机官网「账户 → API」页面查看你的专属节点地址，默认 https://minekuai.com/api/client",
+    "default": "https://minekuai.com/api/client"
+  },
+  "api_key": {
+    "description": "你的API 密钥",
+    "type": "string",
+    "hint": "在麦块联机官网「账户 → API」页面创建并复制，注意不要泄露给他人",
+    "default": ""
+  },
+  "server_id": {
+    "description": "默认控制的服务器实例ID（实例标识符）",
+    "type": "string",
+    "hint": "可留空；留空时请先使用「mc列表」+「mc选择 <实例ID>」指定。填写后无需选择即可直接控制该服务器",
+    "default": ""
+  },
+  "request_timeout": {
+    "description": "API 请求超时时间（秒）",
+    "type": "int",
+    "hint": "单次 API 请求的最长等待时间，网络较差可调大",
+    "default": 10
+  },
+  "max_retries": {
+    "description": "API 请求失败重试次数",
+    "type": "int",
+    "hint": "电源控制等写操作失败后的自动重试次数",
+    "default": 3
+  },
+  "admin_qqs": {
+    "description": "允许执行控制类指令的管理员QQ号列表",
+    "type": "list",
+    "hint": "留空表示不限制（所有人可用）；填写后仅列表中的QQ可控制服务器",
+    "default": []
+  },
+  "allowed_groups": {
+    "description": "允许使用本插件的QQ群号列表",
+    "type": "list",
+    "hint": "留空表示不限制（所有群可用）；填写后仅列表中的群可使用本插件",
+    "default": []
+  },
+  "rainyun_api_key": {
+    "description": "雨云 API 密钥（启用雨云平台控制时必填）",
+    "type": "string",
+    "hint": "雨云控制台 → 账户设置 → API 密钥 获取；不填则 ry 前缀指令不可用",
+    "default": ""
+  },
+  "rainyun_server_id": {
+    "description": "默认控制的雨云实例ID",
+    "type": "string",
+    "hint": "可留空；留空时请先使用「ry列表」+「ry选择 <实例ID>」指定。填写后无需选择即可直接控制该实例",
+    "default": ""
+  },
+  "rainyun_product_type": {
+    "description": "雨云产品类型",
+    "type": "string",
+    "hint": "rcs=云服务器，rgs=游戏云（Minecraft 推荐选 rgs）。留空默认 rcs",
+    "default": "rcs"
+  }
+}
