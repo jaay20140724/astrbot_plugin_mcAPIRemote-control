@@ -2,4 +2,4 @@ astrbot_plugin_mcAPIRemote control # 插件唯一识别名，需与插件目录�
 desc: 多平台服务器远程控制：麦块联机(MineKuai)Minecraft服务器（启动/停止/重启/强制重启/状态/命令/列表）+ 雨云(RainYun)云服务器与游戏云（启动/停止/重启/状态/列表），完整适配QQ官方机器人。 # 插件简短描述
 version: v1.1.0 # 插件版本号，格式：v1.1.1 或 v1.1
 author: Mgour145AWA # 作者
-repo: https://minekuai.cn/account/api # 文档/仓库地址
+repo: https://github.com/jaay20140724/astrbot_plugin_mcAPIRemote-control # 文档/仓库地址
